@@ -1,21 +1,28 @@
 import styled, { css } from 'styled-components'
-import shortDescription from '../utils/helpers'
 
-function Product(prop)
+function Detail(prop)
 {
     const {image,title,price,description} = prop;
+
+    const Wrapper = styled.div`
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+
+    `;
 
     const Container = styled.div`
     width:50%;
     border-bottom: 1px solid #888;
-    height:150px;
     padding:5px;
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     `;
     const Img = styled.div`
-    height:150px;
-    width:200px;
+    height:450px;
+    width:600px;
     background-image:url('${image}');
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +38,7 @@ function Product(prop)
     display:flex;
     flex-direction: column;
     margin-left:10px;
+    margin-top:30px;
     width:80%;
     `;
     const H3 = styled.h3`
@@ -75,8 +83,8 @@ function Product(prop)
     `;
 
     return (
-        <Container>
-            
+        <Wrapper>
+        <Container>     
             <Img/>
             <Card>
             <CardHead>
@@ -84,12 +92,13 @@ function Product(prop)
             
             </CardHead>
             <CardBody>
-            <p>{shortDescription(description)}</p>
+            <p>{description}</p>
             </CardBody>
             </Card>
 
         </Container>
+        </Wrapper>
     )
 }
 
-export default Product;
+export default Detail;

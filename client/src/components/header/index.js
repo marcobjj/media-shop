@@ -50,7 +50,7 @@ function Header () {
 
     return (
         <Container>
-        <H1>Media Shop</H1>
+        <H1>Media Store</H1>
         <Select>
         <option value="Movies">Movies</option>
         <option value="Games">Games</option>
