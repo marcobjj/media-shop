@@ -59,6 +59,7 @@ function Detail(prop)
     background-color: #FDB515;
     box-shadow: 3px 3px;
     color:#000;
+    white-space: nowrap;
     `;
 
     const BidBtn = styled.button`

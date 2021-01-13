@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import Body from './components/body'
 import Header from './components/header'
 import Detail from './components/detail'
+import Login from './components/login'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
           men who are fed up with their mundane lives. Their perfect partnership frays 
           when Marla (Helena Bonham Carter), a fellow support group crasher, attracts 
           Tyler's attention."/>
+    <Login/>
   </React.StrictMode>,
   document.getElementById('root')
 );
